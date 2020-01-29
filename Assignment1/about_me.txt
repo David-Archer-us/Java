@@ -1,0 +1,9 @@
+Name: Guosheng Zhang
+Preferred name: David
+SID: 013900770
+Major: Computer Science
+Preferred email address: guosheng.zhang@sjsu.edu
+Status: Undergraduate
+Senior: No
+Repeating: No
+Other CS courses completed in SJSU: 49J
