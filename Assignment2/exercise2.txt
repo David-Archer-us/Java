@@ -1,0 +1,14 @@
+Differences between int and Integer in Java:
+
+1. A int is a data of primitive type while an Integer is an object of a wrapper class .
+2. "int" takes 32 bits while "Integer" takes 128 bits.
+3. "int" is less flexible than "Integer".
+4. "int" can accept integer or binary number and can cast a floating number, "Integer" can even accept a string of number.
+
+Their differences in functionalities:
+
+1. "Integer" can convert an integer into an object and vice verse. "int" can not. 
+2. An Integer can be used in collections with object reference or generics. "int" can not.
+3. "Integer" can convert a string of integer, but "int" can cast a floating number. 
+4. "Integer" can convert to other bases like binary, octal, or hexadecimal. "int" can not.
+5. "Integer" can do some bitwise operations, such as reverse(), rotateLeft(), rotateRight().
