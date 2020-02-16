@@ -72,12 +72,8 @@ public class Person {
 				+ gender + "\nWeight: " + weight + "\n";
 		return description;
 	}
-	public String introduce() {
-		String description = firstName + " " + lastName + ":\n"
-				+ "Age: " + age + "\nSocial security number: "
-				+ SSN + "\nAddress: " + address + "\nGender: "
-				+ gender + "\nWeight: " + weight + "\n";
-		return description;
+	public void introduce() {
+		System.out.println(this.toString());
 	}
 
 }

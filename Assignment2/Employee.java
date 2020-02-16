@@ -53,16 +53,24 @@ public class Employee extends Person {
 		return yearlySalary;
 	}
 	
-	public String introduce() {
-		String intro = super.introduce();
-		intro = intro + "Employee ID: " + employeeID + "\nEmployee Status: "
-				+ employeeStatus + "\nStart Date: " + startDate;
+	public String toString() {
+		String description = getFirstName() + " " + getLastName() + ":\n"
+				+ "Age: " + getAge() + "\nSocial security number: "
+				+ getSSN() + "\nAddress: " + getAddress() + "\nGender: "
+				+ getGender() + "\nWeight: " + getWeight() + "\n"
+				+ "Employee ID: " + getEmployeeID() + "\n" 
+				+ "Employee Status: " + getEmployeeStatus() + "\n"
+				+ "Start Date: " + getStartDate();
 		if (employeeStatus == "full time") {
-			intro += "\nYearly Salary: " + yearlySalary + "\n";
+			description += "\nYearly Salary: " + yearlySalary;
 		} else {
-			intro += "\nHourly Pay: " + hourlyPay + "\n";
+			description += "\nHourly Pay: " + hourlyPay;
 		}
-		return intro;
+		return description;
+	}
+	
+	public void introduce() {
+		System.out.println(toString());
 	}
 	
 	public double calculatePay(int hoursOrWeeks) {

@@ -1,5 +1,4 @@
 
-
 public class EmployeeTest {
 
 	public static void main(String[] args) {
@@ -20,11 +19,16 @@ public class EmployeeTest {
 				"369 North Road, Silicon Valley, CA 99999, US", "M",
 				200.5, "A0B5", "contractor", "20100905", 45.0, 0.0);
 		
-		System.out.printf(e1.introduce() + "Total Pay: %.2f" + "\n\n", e1.calculatePay(30));
-		System.out.printf(e2.introduce() + "Total Pay: %.2f" + "\n\n", e2.calculatePay(2));
-		System.out.printf(e3.introduce() + "Total Pay: %.2f" + "\n\n", e3.calculatePay(30));
-		System.out.printf(e4.introduce() + "Total Pay: %.2f" + "\n\n", e4.calculatePay(30));
-		System.out.printf(e5.introduce() + "Total Pay: %.2f" + "\n\n", e5.calculatePay(30));
+		e1.introduce();
+		System.out.printf("Total Pay: %.2f" + "\n\n", e1.calculatePay(30));
+		e2.introduce();
+		System.out.printf("Total Pay: %.2f" + "\n\n", e2.calculatePay(2));
+		e3.introduce();
+		System.out.printf("Total Pay: %.2f" + "\n\n", e3.calculatePay(30));
+		e4.introduce();
+		System.out.printf("Total Pay: %.2f" + "\n\n", e4.calculatePay(30));
+		e5.introduce();
+		System.out.printf("Total Pay: %.2f" + "\n\n", e5.calculatePay(30));
 
 	}
 
