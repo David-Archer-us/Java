@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class FullTimeSalaryEmployee extends Employee {
 	protected double yearlySalary;

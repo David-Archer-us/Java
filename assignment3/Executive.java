@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class Executive extends FullTimeSalaryEmployee {
 	private double yearlyBonus;

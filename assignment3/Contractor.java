@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class Contractor extends FullTimeHourlyEmployee {
 	public Contractor(String fName, String lName) {

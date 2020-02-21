@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class Employee extends Person {
 	protected String levelOfEducation;

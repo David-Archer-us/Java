@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class FullTimeHourlyEmployee extends PartTimeHourlyEmployee {
 	protected double overtimePay;
