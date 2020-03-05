@@ -1,0 +1,7 @@
+Exercise 2:
+Implement a program that reads in a text file “quote.txt”, 
+included with this homework assignment, 
+and outputs its contents to the command line screen. 
+Use your favorite IO programming libraries to achieve this result.
+Make sure to implement all necessary exception handling to account for invalid use cases.
+Save your program to a file named ReadFileInput.java.
