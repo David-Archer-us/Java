@@ -1,4 +1,4 @@
-
+package hw7;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -29,7 +29,7 @@ public class Shapes
 		return (Shape) shapeList.get(index);
 	}
 	
-	public void compute()
+	synchronized public void compute()
 	{
 		for (Object s: shapeList)
 		{
