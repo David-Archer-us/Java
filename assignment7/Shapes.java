@@ -1,9 +1,9 @@
-package hw7;
+
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Shapes 
+public class Shapes extends Thread
 {
 	ArrayList<? super Shape> shapeList;
 	
@@ -33,20 +33,13 @@ public class Shapes
 	{
 		for (Object s: shapeList)
 		{
-			new Thread() 
-			{
-				public void run() 
-				{
-					Shape sh = (Shape)s;
-					String result = sh.toString();
-					result += " Area: " + (Math.round(sh.computeArea() * 10)) / 10.0;
-					System.out.println(result);
-				}
-			}.start();	
+			Shape sh = (Shape)s;
+			String result = sh.toString();
+			result += " Area: " + (Math.round(sh.computeArea() * 10)) / 10.0;
+			System.out.println(result);
+	
 		}
 	}
-	
-	
 	
 	public Shape max()
 	{
