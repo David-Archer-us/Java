@@ -60,16 +60,11 @@ public class ClassExplorer extends Application {
 				String filename = input.getText();
 				File file = new File(filename);
 				filename = file.getName();
-				int index = filename.indexOf(".java");
-				if(index > 0)
-				{
-					filename = filename.substring(0, index);
-				}
 				
 				try 
 				{
 					Class classs = Class.forName(filename);
-					
+					Class classs = (Class) ClassLoader.getSystemClassLoader().loadClass(filename);
 					String methodString = "\nClass Methods:\n";
 					Method[] methods = classs.getDeclaredMethods();
 					for (Method method : methods)
