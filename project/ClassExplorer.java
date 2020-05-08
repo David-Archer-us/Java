@@ -63,7 +63,6 @@ public class ClassExplorer extends Application {
 				
 				try 
 				{
-					Class classs = Class.forName(filename);
 					Class classs = (Class) ClassLoader.getSystemClassLoader().loadClass(filename);
 					String methodString = "\nClass Methods:\n";
 					Method[] methods = classs.getDeclaredMethods();
